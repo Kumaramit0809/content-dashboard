@@ -3,7 +3,7 @@
 One feed for news, movie recommendations and social posts, shaped by the categories you choose.
 Built with **Next.js 14 (App Router), React, TypeScript, Redux Toolkit, Tailwind CSS and Framer Motion**.
 
-Author: Amit Kumar (github.com/Kumaramit0809)
+Author: [Amit Kumar](https://github.com/Kumaramit0809)
 
 ## Run it
 
@@ -23,8 +23,9 @@ Without keys the app serves built-in sample data, so it works out of the box.
 ## Tests
 
 ```bash
-npm test                      # unit + integration (Jest, React Testing Library)
-npm run dev & npm run e2e     # E2E (Cypress), needs the dev server running
+npm test                      # unit + integration tests
+npm run dev                   # start the dev server
+npm run e2e                   # run Cypress tests in another terminal
 ```
 
 ## Features
@@ -61,6 +62,6 @@ __tests__/, cypress/e2e/       tests
 
 API keys are read only in the Next.js route handler and never sent to the browser. `.env*` files are git-ignored.
 
-## Known limitations
+## Notes
 
-Card order is not persisted. Social posts are mocked. Not implemented (optional bonus): authentication, real-time updates, i18n.
+The app works without API keys using built-in sample data. API keys can be added through `.env.local` for live news and movie data.
